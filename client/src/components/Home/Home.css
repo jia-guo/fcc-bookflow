@@ -1,0 +1,160 @@
+.home-root {
+	width: 100vw;
+    height: 100vh;
+    padding-top: 65px;
+    /*background-image: url(../../assets/images/page-hero5.jpg);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    position: relative;
+    transition: all 1.5s ease-in-out;
+}
+
+.hero {
+	color: #fff;
+	padding-top: 30vh;
+    padding-left: 8vw;
+}
+
+.hero-inner-wrapper {
+	border-left: 9px solid #fff;
+}
+
+.hero h1 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 3rem;
+	text-shadow: 0 0 50px #000;
+    padding: 5px 15px;
+    margin: 0;
+    line-height: 2.8rem;
+    transition: all 0.35s ease-in-out;
+}
+
+.hero p {
+	padding: 5px 15px;
+}
+
+.info-boxes {
+	width: 20%;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0px;
+	padding-top: 65px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+}
+
+.info-box-wrapper {
+	width: 100%;
+	height: 22%;
+	background: rgba(6, 24, 33, 0.6);
+	display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 26px;
+    margin: 2px 0;
+    box-sizing: border-box;
+    transition: all 0.35s ease-in-out;
+}
+
+.info-box-wrapper:hover {
+	background: rgba(38, 170, 225, 0.6);
+	transform: translate(-40px, 0);
+}
+
+.info-box-content {
+	position: relative;
+}
+
+.info-box-content h3{
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.info-box-content::before {
+	content: "";
+    height: 6px;
+    width: 16px;
+    left: -26px;
+    top: 8px;
+    position: absolute;
+    background-color: #fff;
+}
+
+@media all and (min-width: 980px){
+	.hero .break-point {
+		display: none;
+	}
+}
+
+@media all and (max-width: 979px) {
+	.hero {
+		color: #fff;
+		padding-top: 24vh;
+	    padding-left: 8vw;
+	}
+	.info-boxes {
+		width: 26%;
+	}
+}
+
+@media all and (max-width: 700px){
+	.hero {
+	    padding-left: 20px;
+	    padding-right: 20px;
+	}
+	.hero h1 {
+		font-size: 2.2rem;
+	}
+	.hero .break-point {
+		display: none;
+	}
+	.info-boxes {
+		width: 100%;
+		height: 20%;
+		position: absolute;
+		top: auto;
+		bottom: 10px;
+		flex-direction: row;
+	}
+	.info-box-wrapper {
+		width: 24%;
+		height: 100%;
+	    margin: 0 2px;
+	}
+	.info-box-wrapper:hover {
+		transform: translate(0, -40px);
+	}
+	.info-box-content h3 {
+		font-size: 1em;
+	}
+}
+
+@media all and (max-width: 540px){
+	.hero {
+	    padding-top: 20vh;
+	}
+	.hero .break-point {
+		display: block;
+	}
+	.info-boxes {
+		display: none;
+	}
+}
+
+@media all and (max-width: 380px){
+	.hero {
+	    padding-left: 0px; 
+	    padding-right: 0px;
+	}
+	.hero-inner-wrapper {
+	    padding: 15px 5px 5px 0;
+		background: rgba(6, 24, 33, 0.1);
+	}
+	.hero h1 {
+		font-size: 2rem;
+	}
+}

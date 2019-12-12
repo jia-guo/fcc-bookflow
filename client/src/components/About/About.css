@@ -1,0 +1,68 @@
+.about-root {
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+.about-root p, .about-root a, .about-root span {
+	font-size: 16px;
+}
+
+.about-root p {
+	margin-bottom: 7px;
+}
+
+.about-root ul {
+	margin: 0;
+}
+
+a.about-link {
+	color: #26AAE1 !important;
+	text-decoration: underline;
+	margin-left: 5px;
+}
+
+.about-project-desc-header {
+	font-family: 'Josefin Sans', sans-serif !important;
+    padding: 10px 0 7px 0;
+    font-size: 1.3rem;
+}
+
+.ui.large.label {
+	margin: 2px;
+}
+
+h1.ui.header.about-author-title {
+	margin-top: 50px;
+}
+
+.about-author-location.header {
+	margin-top: 25px !important;
+}
+
+.items:not(.unstackable)>.item>.image {
+	margin-left: 0 !important;
+}
+
+.about-author-icon-text, .about-author-link-text {
+	color: #000 !important;
+}
+
+.about-author-icon a {
+	color: #fff !important;
+}
+
+.about-author-icon a:hover {
+	color: #26AAE1 !important;
+}
+
+@media all and (max-width: 767px) {
+	.about-author-location.header {
+		margin-top: 0px !important;
+	}
+}
+
+@media all and (max-width: 360px) {
+	.about-author-icon-text, .about-author-link-text {
+		display: none;
+	}
+}

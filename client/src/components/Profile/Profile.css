@@ -1,0 +1,176 @@
+.profile-root {
+	margin-bottom: 60px;
+}
+
+.profile-root h1.ui.header {
+    font-size: 3rem;
+    margin: 10px 0 0 0 !important;
+}
+
+.profile-root h5.ui.header {
+    margin: 10px 0 25px 0 !important;
+}
+
+.user-info {
+	margin-bottom: 30px;
+}
+
+a.user-info-edit {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 16px;
+	padding: 0 10px;
+	color: #909090 !important;
+	cursor: pointer;
+	transition: all 0.35s ease-in-out;
+}
+
+a.user-info-edit:hover {
+	color: #26AAE1 !important;
+}
+
+a.user-info-edit i.icon {
+	margin-right: 3px !important;
+}
+
+/* statistic tab */
+.ui.statistics {
+	width: 80%;
+    justify-content: space-between;
+    margin: 1em 0 -2em 0;
+}
+
+.user-book-tab .ui.statistic {
+	border-bottom: 3px solid transparent;
+    height: 50px;
+	cursor: pointer;
+}
+
+.user-book-tab .ui.statistic:first-child{
+	margin: 0;
+}
+
+/* -- tab active */
+
+.user-book-tab .ui.statistic.active {
+	border-bottom: 3px solid #26AAE1;
+	transition: all 0.7s ease-in-out;
+}
+
+.user-book-tab .ui.statistic.active>.value, .user-book-tab .ui.statistic.active>.label {
+	color: #26AAE1;
+	transition: all 0.7s ease-in-out;
+}
+
+/* -- tab hover */
+
+.user-book-tab .ui.statistic:hover {
+	border-bottom: 3px solid #26AAE1;
+	transition: all 0.2s ease-in-out;
+}
+
+.user-book-tab .ui.statistic:hover >.value, .user-book-tab .ui.statistic:hover >.label {
+	color: #26AAE1;
+	transition: all 0.2s ease-in-out;
+}
+
+.user-book-tab .ui.statistic>.value, .ui.statistics .statistic>.value {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.6rem!important;
+	font-weight: 700;
+}
+
+.user-book-tab .ui.statistic>.label, .ui.statistics .statistic>.label {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 0.9rem!important
+}
+
+/* divider */
+.ui.divider {
+    position: relative;
+    top: 12px;
+}
+
+/* add new floating button */
+.ui.circular.button.add-new {
+	display:none;
+    background-color: #26AAE1;
+    color: #fff;
+    font-size: 20px;
+    position: fixed;
+    z-index: 3;
+    bottom: 40px;
+    right: 40px;
+	box-shadow: 0px 4px 5px -2px rgba(0, 0, 0, 0.2), 0px 7px 10px 1px rgba(0, 0, 0, 0.14), 0px 2px 16px 1px rgba(0, 0, 0, 0.12);
+}
+
+/* search */
+.profile-root .search-root {
+	justify-content: flex-start;
+	margin: 25px 0 10px 0;
+}
+
+/* books */
+.profile-root .books-root {
+	justify-content: flex-start;
+}
+
+.profile-root .books-root .ui.card {
+	margin-right: 30px;
+}
+
+/* EditInfo */
+.edit-userinfo-modal>.content>.description {
+    padding: 14px 20px !important;
+}
+
+.edit-userinfo-modal .ui.form .field>label {
+	font-size: 1.2rem !important;
+}
+
+@media all and (min-width: 992px) {
+	.ui.statistics {
+		width: 70%;
+	}
+}
+
+@media all and (max-width: 610px) {
+	.ui.statistics {
+		width: 100%;
+	}
+	.profile-root .search-root {
+		justify-content: center;
+	}
+	.profile-root .books-root {
+		justify-content: center;
+	}
+	.profile-root .books-root .ui.card {
+		margin-right: 0;
+	}
+}
+
+@media all and (max-width: 510px){
+	.ui.statistics>.statistic.addNew {
+		display: none;
+	}
+	.ui.circular.button.add-new {
+		display: block;
+	}
+	.user-book-tab .ui.statistic:nth-child(2){
+		margin: 0;
+	}
+}
+
+@media all and (max-width: 415px) {
+	.user-book-tab .ui.statistic>.value, .ui.statistics .statistic>.value {
+		font-size: 1.6rem!important;
+	}
+	.user-book-tab .ui.statistic>.label, .ui.statistics .statistic>.label {
+		font-size: 0.7rem!important
+	}
+	.ui.statistic+.ui.statistic {
+	    margin: 0 0 0 1em;
+	}
+	.user-book-tab .ui.statistic:nth-child(2){
+		margin: 0;
+	}
+}

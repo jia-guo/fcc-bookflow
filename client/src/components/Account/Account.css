@@ -1,0 +1,88 @@
+.account-root.ui.container {
+	width: 50vw;
+	margin-bottom: 45px;
+}
+
+@media all and (min-width: 900px){
+	.account-root.ui.container {
+		width: 35vw;
+	}
+}
+
+.account-root.account-logout {
+	text-align: center;
+}
+
+.signup-fields {
+	margin-bottom: 14px;
+}
+
+.account-root.account-logout h3.ui.header {
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 18px 0;
+    margin: 18px 0;
+    font-weight: 400;
+    transition: all 0.35s ease-in-out;
+}
+
+/* status message bar */
+.ui.form .message:not(:empty){
+	background: #26AAE1;
+	color: #fff;
+	font-size: 1.2rem;
+	border-radius: 0;
+	box-shadow: none;
+	transition: all 0.35s ease-in-out;
+}
+
+.ui.form .message:not(:empty).account-msg-success{
+	font-size: 1.28571429rem;
+    text-align: center;
+    padding: 18px 0;
+    background: #fff;
+    color: #000;
+}
+
+.ui.form .message:not(:empty).account-msg-error{
+	background: #DB2828;
+}
+
+.ui.icon.message>.icon:not(.close) {
+	font-size: 1.8em;
+}
+
+/* input icon */
+.ui.icon.input>i.icon:not(.link) {
+    font-size: 1.2rem;
+}
+
+/* input */
+.ui.form .field .ui.input input, .ui.form .fields .field .ui.input input {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.2rem;
+    border-radius: 0;
+    padding-top: 14px;
+    padding-bottom: 12px;
+    transition: all 0.35s ease-in-out;
+}
+
+/* input error warning */
+.ui.red.basic.label{
+	border: none !important;
+	padding-left: 5px;
+	padding-bottom: 0;
+	font-size: 1.1rem;
+	font-weight: 400;
+	transition: all 0.35s ease-in-out;
+}
+
+/* submit button */
+.account-root .ui.button{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    height: 48px;
+    border-radius: 0;
+    background-color: #26AAE1;
+    transition: all 0.35s ease-in-out;
+}
